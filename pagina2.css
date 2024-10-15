@@ -1,0 +1,119 @@
+body {
+      margin: 0;
+      padding: 0;
+  }
+  
+  .centrado {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Alinea los elementos en el centro */
+  }
+  
+  .sombreado {
+      box-shadow: 10px 10px 25px 8px rgba(0, 0, 0, 0.75);
+  }
+  
+  .body {
+      background-color: #cd895645;
+      font-family: 'Playfair Display', serif;
+  }
+  
+  .header {
+      background-image: url(https://i.pinimg.com/564x/5f/42/c6/5f42c6a19cffcbac72ed7b12a28dad69.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      border-radius: 15px;
+      width: 100%; /* Asegúrate de que ocupe el 100% del ancho */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centra verticalmente */
+      align-items: center; /* Centra horizontalmente */
+  }
+  
+  .not-header {
+      font-size: 100px;
+      color: black;
+      text-shadow: 1px 1px 2px pink;
+      text-align: center; /* Alinea el texto en el centro */
+  }
+  
+  .cont-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .button {
+      font-size: 20px;
+      background-color: #7fffd44d;
+  }
+  
+  .cont-nav {
+      display: flex;
+      flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+      justify-content: center; /* Centra los elementos */
+      margin: 20px 0; /* Agrega margen */
+  }
+  
+  .not-nav {
+      padding: 15px; /* Agrega espacio alrededor */
+  }
+  
+  .cont1-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Centra los elementos */
+      width: 100%; /* Asegúrate de que ocupe el 100% del ancho */
+      margin: 20px 0; /* Agrega margen */
+  }
+  
+  .cont2-card {
+      width: 300px; /* Ancho fijo */
+      margin: 10px; /* Espaciado entre tarjetas */
+      background-color: antiquewhite;
+      border-radius: 15px;
+      padding: 20px; /* Espacio interno */
+      text-align: center; /* Centra el contenido */
+  }
+  
+  .img {
+      width: 100%; /* Asegura que la imagen ocupe el 100% de la tarjeta */
+      height: auto; /* Mantiene la proporción */
+      border-radius: 15px; /* Bordes redondeados */
+  }
+  
+  .cont-formulario {
+      margin: 20px 0; /* Agrega margen */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .cont-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centra el contenido del pie de página */
+  }
+  
+  @media (max-width: 768px) {
+      .not-header {
+          font-size: 50px; /* Ajusta el tamaño de fuente */
+      }
+  
+      .button {
+          font-size: 16px; /* Ajusta el tamaño del botón */
+      }
+  
+      .cont2-card {
+          width: 90%; /* Ancho dinámico en pantallas pequeñas */
+      }
+  
+      .cont1-card {
+          flex-direction: column; /* Cambia a columna */
+      }
+  
+      .cont-nav {
+          flex-direction: column; /* Cambia a columna para móviles */
+      }
+  }
